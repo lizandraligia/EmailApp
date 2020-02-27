@@ -113,7 +113,21 @@ h5{
     border-right: 2px solid #7540EE;
 }
 
+.card-selected {
+    background-color: #FFFFFF;
+    background: #F1EBFE;
+    color: #7540EE;
+    border-right: 2px solid #7540EE;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 94.5%;
+    height: 150px;
+}
+
 .div-icons{
+    display: flex;
     border-radius: 20px;
     background-color: #FFFFFF;
     height: fit-content;

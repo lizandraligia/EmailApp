@@ -49,7 +49,8 @@ h5{
     padding: 10px 0;
     position: relative;
     display: inline-block;
-    width: 99%;
+    width: 95%;
+    padding-left: 4%;
 }
 
 .btn-menu:hover{
@@ -70,6 +71,30 @@ h5{
     padding: 3px 8px;
     color: #787993;
     font-size: 12px;
+}
+
+.btn-menu-selected {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    background: #F1EBFE;
+    color: #787993;
+    border-right: 2px solid #7540EE;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 89%;
+    .badge{
+        position: absolute;
+        top: 6px;
+        right: 20px;
+        padding: 3px 8px;
+        color: #787993;
+        font-size: 12px;
+        border-radius: 50%;
+        background: #7540EE;
+        color: white;
+    }
 }
 
 .purple-color{

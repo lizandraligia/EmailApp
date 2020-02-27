@@ -7,27 +7,27 @@
                 <h5>Menu</h5>
                 <mat-icon class="purple-color">keyboard_arrow_left</mat-icon>
             </div>
-            <a (click)="selected = inbox" class="btn-menu">
+            <a [ngClass]="selected==inbox?'btn-menu-selected':'btn-menu'" (click)="selected = inbox">
                 <mat-icon class="icon-menu">move_to_inbox_</mat-icon>
                 <span>Inbox</span>
                 <span class="badge">{{inbox.length}}</span>
             </a>
-            <a (click)="selected = draft" class="btn-menu">
+            <a [ngClass]="selected==draft?'btn-menu-selected':'btn-menu'" (click)="selected = draft">
                 <mat-icon class="icon-menu">file_copy</mat-icon>
                 <span>Drafts</span>
                 <span class="badge">{{draft.length}}</span>
             </a>
-            <a (click)="selected = sent" class="btn-menu">
+            <a [ngClass]="selected==sent?'btn-menu-selected':'btn-menu'" (click)="selected = sent">
                 <mat-icon class="icon-menu">near_me</mat-icon>
                 <span>Sent</span>
                 <span class="badge">{{sent.length}}</span>
             </a>
-            <a (click)="selected = spam"  class="btn-menu">
+            <a [ngClass]="selected==spam?'btn-menu-selected':'btn-menu'" (click)="selected = spam" >
                 <mat-icon class="icon-menu">block</mat-icon>
                 <span>Spam</span>
                 <span class="badge">{{spam.length}}</span>
             </a>
-            <a (click)="selected = deleted"  class="btn-menu">
+            <a [ngClass]="selected==deleted?'btn-menu-selected':'btn-menu'" (click)="selected = deleted" >
                 <mat-icon class="icon-menu">delete_outline</mat-icon>
                 <span>Deleted</span>
                 <span class="badge">{{deleted.length}}</span>

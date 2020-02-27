@@ -11,7 +11,8 @@
         </div>
         <!-- Email list -->
         <div class="div-email-list">
-            <a (click)="selectEmail(email)" *ngFor="let email of listaEmails | filterTitle: searchFilter" class="card">
+            <a [ngClass]="emailSelecionado==email?'card-selected':'card'" (click)="selectEmail(email)"
+            *ngFor="let email of listaEmails | filterTitle: searchFilter">
                 <div class="align">
                     <span class="date">{{email.timestamp | date: 'mm-dd-yyyy'}}</span>
                     <h6>@netguru</h6>
@@ -27,7 +28,9 @@
                         <h5>{{email.from.name}}</h5>
                     </div>
                     <div class="div-icons">
-                        <span *ngIf="email.attachments.length > 0">{{email.attachments.length}}</span>
+                        <div style="display: flex;width: 14px;" *ngIf="email.attachments.length > 0">
+                            <p style="margin: auto;">{{email.attachments.length}}</p>
+                        </div>
                         <mat-icon *ngIf="email.attachments.length > 0" class="attach">attach_file</mat-icon>
                         <mat-icon *ngIf="email.favorite" class="starred">star</mat-icon>
                         <mat-icon *ngIf="!email.favorite" style="color: #787993;" class="starred">star_outlined</mat-icon>
