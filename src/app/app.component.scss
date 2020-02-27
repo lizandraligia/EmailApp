@@ -1,0 +1,93 @@
+.lateral-bar{
+    height: 100vh;
+    width:6vw;
+    background-color: #7540EE;
+    text-align: center;
+}
+
+.top-bar{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    background-color: #fdfbfb;
+}
+
+.search{
+    border: none;
+    width: 90%;
+    height: 10vh;
+    font-size: 16px;
+    vertical-align: middle;
+    background-color: #fdfbfb;
+    outline: none;
+}
+::placeholder{
+    color: #CCCCCC;
+}
+
+.search-icon{
+    color: #7540EE;
+    font-size: 30px;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.first-div-top{
+    width: 15%;
+    border-right: 1px solid rgb(204, 204, 204, 0.3);
+    display: flex;
+}
+
+.second-div-top{
+    width: 55%;
+    border-right: 1px solid rgb(204, 204, 204, 0.3);
+}
+
+.third-div-top{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex{
+    display: flex;
+}
+
+.purple-color{
+    color: #7540EE;
+    line-height: 10vh;
+}
+
+.menu-icon{
+    color: #FFFFFF;
+    font-size: 28px;
+}
+
+.btn-menu {
+    cursor: pointer;
+    background-color: #7540EE;
+    padding: 15px 0;
+    display: inline-block;
+    width: 98%;
+}
+
+.btn-menu:hover {
+    background: #5320c9cb;
+    border-right: 2px solid #eeeb40dc;
+}
+
+.user-icon{
+    color: #CCCCCC;
+    padding: 0 10px;
+    line-height: 10vh;
+}
+
+.first-div-lateral{
+    height: 10vh;
+    background-color: #25265E;
+}
+
+#hello-txt{
+    line-height: 10vh;
+    margin-right: 3px;
+}

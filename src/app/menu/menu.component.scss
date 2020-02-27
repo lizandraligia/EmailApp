@@ -1,0 +1,118 @@
+h6{
+    color: #CCCCCC;
+    padding: 0 5px;
+}
+
+h5{
+    padding-left: 10px;
+}
+
+#btn-new-message{
+    background-color: #7540EE;
+    color: #FFFFFF;
+    width: 90%;
+    margin: 10px 0 0 10px;
+    border-radius: 8px;
+}
+
+#btn-all-contacts{
+    background-color: #FFFFFF;
+    color: #7540EE;
+    border: 1px solid #ECECEE;
+    width: 90%;
+    margin: 10px 0 0 10px;
+    font-weight: 400;
+    border-radius: 8px;
+}
+
+.icon-menu{
+    float: left;
+    font-size: 16px;
+    text-align: left;
+}
+
+.container{
+    display: block;
+}
+
+.container-border{
+    border-bottom: 1px solid rgb(204, 204, 204, 0.3);
+    padding: 10px 0;
+    width: 100%;
+}
+
+.btn-menu {
+    cursor: pointer;
+    background-color: #FFFFFF;
+    color: #787993;
+    text-decoration: none;
+    padding: 10px 0;
+    position: relative;
+    display: inline-block;
+    width: 99%;
+}
+
+.btn-menu:hover{
+    background: #F1EBFE;
+    color: #7540EE;
+    border-right: 2px solid #7540EE;
+    .badge{
+        border-radius: 50%;
+        background: #7540EE;
+        color: white;
+    }
+}
+
+.btn-menu .badge {
+    position: absolute;
+    top: 6px;
+    right: 20px;
+    padding: 3px 8px;
+    color: #787993;
+    font-size: 12px;
+}
+
+.purple-color{
+    color: #7540EE;
+}
+
+.flex{
+    display: flex;
+}
+
+.align{
+    display: flex;
+    justify-content: space-between;
+}
+
+.font-16{
+    font-size: 16px;
+}
+
+.image{
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 10px;
+}
+
+.bubble-icon{
+    font-size: 16px;
+    color: #787993;
+}
+
+.letterIcon{
+    display: flex;
+    font-size: x-large;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 10px;
+    background-color: #2DC76D;
+    text-align: center;
+    color: white;
+    p{
+        margin: auto;
+        text-align: center;
+    }
+}

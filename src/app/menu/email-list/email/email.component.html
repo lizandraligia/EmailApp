@@ -1,0 +1,70 @@
+<div class="container">
+    <!-- Title and buttons from top -->
+    <div class="div-top">
+        <div>
+            <h4>{{email.title}}</h4>
+        </div>
+        <div>
+            <button mat-button class="btn-arrow">
+                <mat-icon>keyboard_arrow_left</mat-icon>
+            </button>
+            <button mat-button class="btn-arrow">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+            </button>
+            <button mat-button class="btn-arrow-left">
+                <mat-icon>reply</mat-icon>
+            </button>
+            <button mat-button class="btn-arrow-center">
+                <mat-icon>reply_all</mat-icon>
+            </button>
+            <button mat-button class="btn-arrow-right">
+                <mat-icon>arrow_right_alt</mat-icon>
+            </button>
+        </div>
+    </div>
+    <!-- Email body -->
+    <div class="div-middle">
+        <div class="email-header">
+            <div class="flex">
+                <div class="letterIcon" *ngIf="!email.from.avatar">
+                    <p>{{email.from.name.substring(0,1)}}</p>
+                </div>
+                <img *ngIf="email.from.avatar" class="image" src="{{email.from.avatar}}"/>
+                <h5 class="name">{{email.from.name}}</h5>
+                <h6>@netguru</h6>
+            </div>
+            <div>
+                <span class="date">{{email.timestamp | date: 'EEEE, mm-dd-yyyy'}}</span>
+            </div>
+        </div>
+        <div class="position-right">
+            <div class="star-div">
+                <mat-icon *ngIf="email.favorite" class="starred">star</mat-icon>
+                <mat-icon *ngIf="!email.favorite"  class="starred">star_outlined</mat-icon>
+                <span class="span-body">Starred</span>
+            </div>
+            <div class="attach-div">
+                <mat-icon class="attach">attach_file</mat-icon>
+                <span class="span-body">{{email.attachments.length}} Attachments</span>
+            </div>
+        </div>
+        <div class="body-div">
+            <p>{{email.body}}</p>
+        </div>
+    </div>
+    <!-- Buttons from bottom  -->
+    <div style="padding: 10px;">
+        <span class="reply-text">
+            <mat-icon class="btn-bottom-arrow">reply</mat-icon>
+            Reply
+        </span>
+        <span class="span-detail">or</span>
+        <span class="reply-text">
+            <mat-icon class="btn-bottom-arrow">reply_all</mat-icon>
+            Reply to all
+        </span>
+        <mat-icon class="send-icon">send</mat-icon>
+        <mat-icon class="attach-icon">attach_file</mat-icon>
+    </div>
+
+</div>

@@ -1,0 +1,143 @@
+h6{
+    margin: 0;
+}
+
+h5{
+    margin: auto;
+    padding-left: 1vw;
+}
+
+.div-top{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    border-left: 1px solid rgb(204, 204, 204, 0.3);
+    border-right: 1px solid rgb(204, 204, 204, 0.3);
+    border-bottom: 1px solid rgb(204, 204, 204, 0.3);
+    padding: 10px 0;
+    width: 100%;
+}
+
+.div-email-list{
+    height: 80vh;
+    overflow: auto;
+    padding: 0;
+    position: relative;
+    border-left: 1px solid rgb(204, 204, 204, 0.3);
+    border-right: 1px solid rgb(204, 204, 204, 0.3);
+    border-bottom: 1px solid rgb(204, 204, 204, 0.3);
+    width: 100%;
+}
+
+.div-email-list::-webkit-scrollbar{
+    display: none;
+}
+
+.container{
+    display: block;
+    width: 30vw;
+}
+
+.inline{
+    display: inline;
+    padding-left: 30px;
+}
+
+.flex{
+    display: flex;
+}
+
+.align{
+    display: flex;
+    justify-content: space-between;
+}
+
+.lbl{
+    margin-right: 10px;
+    color: #CCCCCC;
+    font-size: 12px;
+}
+
+.date{
+    background-color: rgba(255, 255, 255);
+    color: #2DC76D;
+    border-radius: 12px;
+    padding: 4px 10px;
+    position: relative;
+}
+
+.starred{
+    color: #FFC800;
+    padding: 4px;
+    font-size: 12px;
+    width: 14px;
+    height: 14px;
+}
+.attach{
+    color: #2F61D5;
+    padding: 4px;
+    font-size: 12px;
+    width: 14px;
+    height: 14px;
+    transform: rotate(45deg);
+}
+
+.email-header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    height: 2vw;
+    margin: auto;
+}
+
+.email-body{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.card {
+    background-color: #FFFFFF;
+    color: #787993;
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+    width: 94.5%;
+    height: 150px;
+}
+
+.card:hover {
+    background: #F1EBFE;
+    color: #787993;
+    border-right: 2px solid #7540EE;
+}
+
+.div-icons{
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    height: fit-content;
+    align-items: center;
+}
+
+.image{
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+}
+
+.letterIcon{
+    display: flex;
+    font-size: x-large;
+    border-radius: 50%;
+    width: 2vw;
+    height: 2vw;
+    margin-left: 10px;
+    background-color: #2DC76D;
+    text-align: center;
+    color: white;
+    p{
+        margin: auto;
+        text-align: center;
+    }
+}

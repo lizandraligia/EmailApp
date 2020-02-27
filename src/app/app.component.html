@@ -1,0 +1,52 @@
+<div class="flex">
+    <!-- Lateral bar -->
+    <div class="lateral-bar">
+        <div class="first-div-lateral">
+            <mat-icon class="menu-icon" style="padding: 15px;">event_note</mat-icon>
+        </div>
+        <div style="margin-top: 100px;">
+            <a class="btn-menu">
+                <mat-icon class="menu-icon">calendar_today</mat-icon>
+            </a>
+            <a class="btn-menu">
+                <mat-icon class="menu-icon">mail_outline</mat-icon>
+            </a>
+            <a class="btn-menu">
+                <mat-icon class="menu-icon">people_outline</mat-icon>
+            </a>
+        </div>
+        <div style="margin-top: 220px;">
+            <a class="btn-menu">
+                <mat-icon class="menu-icon">menu</mat-icon>
+            </a>
+        </div>
+    </div>
+    <!-- Top bar -->
+    <div>
+        <div class="top-bar">
+            <div class="first-div-top">
+                <mat-icon class="user-icon">account_circle</mat-icon>
+                <h5 style="line-height: 10vh;">NetGuru</h5>
+                <mat-icon class="purple-color">keyboard_arrow_down</mat-icon>
+            </div>
+            <div class="second-div-top">
+                <mat-icon class="search-icon">search</mat-icon>
+                <input autocomplete="off" [(ngModel)]="searchFilter" class="search" placeholder="Search">
+            </div>
+            <div  class="third-div-top">
+                <mat-icon class="purple-color" style="margin-left: 20px;">notifications_none</mat-icon>
+                <div class="flex">
+                    <h5 id="hello-txt">Hello,</h5>
+                    <h5 class="purple-color">Patrik</h5>
+                    <mat-icon class="user-icon">account_circle</mat-icon>
+                    <mat-icon class="purple-color">keyboard_arrow_down</mat-icon>
+                </div>
+            </div>
+        </div>
+        <!-- Search component -->
+        <app-menu [searchFilter]="{title: searchFilter}"></app-menu>
+
+    </div>
+
+</div>
+
